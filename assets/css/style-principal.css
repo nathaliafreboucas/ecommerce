@@ -1,0 +1,61 @@
+main{
+    background-color: #E5E5E5;
+    grid-area: main;
+}
+.sessao-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.sessoes{
+    display: flex;
+    width: 80%;
+    gap: 2%; 
+    flex-wrap: wrap;
+}
+.info-sessao{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 1.6rem;
+    align-items: center;
+}
+.info-sessao h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #464646;
+}
+.info-sessao a{
+   text-decoration: none;
+   color:#2A7AE4;
+   font-weight: 700;
+   font-size: .8rem;
+}
+.seta{
+    vertical-align: text-top;
+
+}
+.caixa{
+   line-height: 1.2rem;
+   width: 15%;
+}
+.caixa img{
+    width: 100%;
+}
+.nome-produto{
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: #464646;
+}
+.preço{
+    font-weight: 700;
+    font-size: 0.8;
+    color: #464646;
+}
+.info-produto a{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 0.7rem;
+}

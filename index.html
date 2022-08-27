@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Nathália Rebouças">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-principal.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulário.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsivo.css">
+</head>
+
+<title>Alura Geek</title>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo-busca">
+                <a href="./index.html" class="logo">
+                    <img src="./assets/imagens/logo-controle.png" id="elemento-logo">
+                    <img src="./assets/imagens/logo-alura.png" class="elementos-logo">
+                    <img src="./assets/imagens/logo-geek.png" class="elementos-logo">
+                </a>
+                <form class="form-pesquisa">
+                    <input type="text" placeholder="O que deseja encontar?" class="input-pesquisa">
+                    <button class="b-busca"><img src="./assets/imagens/Vector.png" alt=""></button>
+                </form>
+            </div>
+            <div class="botao-login">
+               <button class="botao-branco" data-botao-login>Login</button>
+               <button class="b-busca2 botao-busca"><img src="./assets/imagens/lupa-preta.png" alt=""></button>
+            </div>
+            
+        </div>
+        <div class="banner">
+            <h1>Dezembro Promocional</h1>
+            <p>Produtos selecionados com 33% de desconto</p>
+            <button class="botoes b-console" data-botao-ver-consoles> Ver Consoles </button>
+        </div>
+    </header>
+    <main>
+        <section class="sessao-principal" >
+            <div class="info-sessao">
+                <h1>Star Wars</h1>
+                <a href="#">Ver tudo <img src="./assets/imagens/seta.svg" alt="" class="seta"></a>
+            </div>
+            <div class="sessoes" data-sessao-sw>
+                
+            </div>
+            
+        </section>
+        <section class="sessao-principal" id="consoles" >
+            <div class="info-sessao">
+                <h1>Consoles</h1>
+                <a href="#">Ver tudo <img src="./assets/imagens/seta.svg" alt="" class="seta"></a>
+            </div>
+            <div class="sessoes" data-sessao-cons>
+            </div>
+        </section>
+        <section class="sessao-principal">
+            <div class="info-sessao">
+                <h1>Diversos</h1>
+                <a href="#">Ver tudo <img src="./assets/imagens/seta.svg" alt="" class="seta"></a>
+            </div>
+            <div class="sessoes" data-sessao-diver>
+            </div>
+            
+        </section>
+        <section class="menu-formulario">
+            <div class="conteudo-menu-formulario">
+                <div class="logo-menu">
+                    <div class="logo logo-rodape">
+                        <img src="./assets/imagens/logo-controle.png" alt="">
+                        <img src="./assets/imagens/logo-alura.png" alt=""> 
+                        <img src="./assets/imagens/logo-geek.png" alt="">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Quem somos nós</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Programa fidelidade</a></li>
+                        <li><a href="#">Nossas lojas</a></li>
+                        <li><a href="#">Quero ser franqueado</a></li>
+                        <li><a href="#">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+                <form action="./mensagem-enviada.html" class="formulario">
+                    <fieldset class="sessao-unica">
+                        <legend class="formulario-legenda">Fale Conosco</legend>
+                        <div class="input input-nome">
+                            <input name="nome" type="text" id="nome" data-form-nome-rodape>
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="input textarea">
+                            <textarea type="text" id="mensagem" placeholder="Escreva sua mensagem" data-form-mensagem-rodape></textarea>
+                        </div>
+                        <button type="submit" class="botoes" id="envia-mensagem" data-form-botao-rodape>Enviar mensagem</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p> &copy; Desenvolvido por Nathália Rebouças 2022</p>
+    </footer>
+    <script src="./js/login.js"></script>
+    <script src="./js/botao-consoles.js"></script>
+    <script type="module" src="./js/validacaoFormularioRodape.js"></script>
+    <script type="module" src="./produtos-controller/produtosControllerInicio.js"></script>
+</body>
+</html>

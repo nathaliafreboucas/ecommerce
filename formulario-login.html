@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Nathália Rebouças">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style-principal.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/formulário.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/pagina-login.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsivo.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsivo-principal.css">
+
+    </head>
+
+    <title>Alura Geek</title>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <div class="logo-busca">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/imagens/logo-controle.png" id="elemento-logo">
+                        <img src="./assets/imagens/logo-alura.png" class="elementos-logo">
+                        <img src="./assets/imagens/logo-geek.png" class="elementos-logo">
+                    </a>
+                    <form class="form-pesquisa">
+                        <input type="text" placeholder="O que deseja encontar?" class="input-pesquisa">
+                        <button class="b-busca"><img src="./assets/imagens/Vector.png" alt=""></button>
+                    </form>
+                </div>
+                <div class="botao-login">
+                    <button class="b-login"> Login </button>
+                </div>
+                <div class="botao-busca">
+                    <a><button class="b-busca2"><img src="./assets/imagens/lupa-preta.png" alt=""></button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form action="./produtosAdmin.html" class="formulario-login">
+                <fieldset class="form-login">
+                    <legend class="login-legenda">Iniciar Sessão</legend>
+                    <div class="input input-nome">
+                        <input name="email" type="email" id="email" required>
+                        <label for="email">Digite seu email</label>
+                    </div>
+                    <div class="input input-nome">
+                        <input name="senha" type="password" id="senha" required>
+                        <label for="senha">Digite sua senha</label>
+                    </div>
+                    <button class="botoes" id="entrar" type="submit">Entrar</button>
+                </fieldset>
+            </form>
+            <section class="menu-formulario">
+                <div class="conteudo-menu-formulario">
+                    <div class="logo-menu">
+
+                        <div class="logo logo-rodape">
+                            <img src="./assets/imagens/logo-controle.png" alt="">
+                            <img src="./assets/imagens/logo-alura.png" alt=""> 
+                            <img src="./assets/imagens/logo-geek.png" alt="">
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#">Quem somos nós</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Programa fidelidade</a></li>
+                            <li><a href="#">Nossas lojas</a></li>
+                            <li><a href="#">Quero ser franqueado</a></li>
+                            <li><a href="#">Anuncie aqui</a></li>
+                        </ul>
+                    </div>
+                    <form action="#" class="formulario">
+                        <fieldset class="sessao-unica">
+                            <legend class="formulario-legenda">Fale Conosco</legend>
+                            <div class="input input-nome">
+                                <input name="nome" type="text" id="nome" required/>
+                                <label for="nome">Nome</label>
+                            </div>
+                            <div class="input textarea">
+                                <textarea type="text" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+                            </div>
+                            <button class="botoes" id="envia-mensagem">Enviar mensagem</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p> &copy; Desenvolvido por Nathália Rebouças 2022</p>
+        </footer>
+        <script type="module" src="./js/login.js"></script>
+    </body> 
+</html>

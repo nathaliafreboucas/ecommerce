@@ -1,0 +1,117 @@
+.menu-formulario{
+    background-color: #EAF2FD;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-menu-formulario{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.logo-menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.logo-rodape{
+    align-self: flex-start;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu a{
+   font-weight: 500; 
+   color: #464646 ;
+   text-decoration: none;
+}
+
+.formulario{
+    display: flex;
+    width: 40%;
+}
+.sessao-unica{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.formulario-legenda{
+    font-weight: 700;
+    color: #464646;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.input input, .input textarea{
+    box-sizing: border-box;
+}
+.input-nome{
+    position: relative;
+    margin-bottom: 1rem;
+    height: 3rem;
+}
+
+.input-nome input{
+    width: 100%;
+    height: 3rem;
+    background-color: #ffff;
+    border: transparent;
+    border-radius: 5px;
+    border-bottom: 1px solid #C8C8C8;
+    padding: 0.5rem 0 0 0.5rem;
+    transition:  .3s ;
+    
+}
+
+.input-nome label{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    bottom: 0;
+    right: 0;
+    margin-top: 13px;
+    transition: .3s;
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.input-nome input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;  
+}
+
+.input-nome input:focus + label, .input-nome input:not(placeholder-shown) + label{
+    margin-top: 0px;
+    top: 5px;
+    font-size: 13px;
+    transition: 0.2s;
+    margin-bottom: 2rem;
+} 
+textarea{
+    width: 100%;
+    height: 3rem;
+    resize: none;
+    border: transparent;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 1rem;
+    padding: 0.7rem 0 0 0.7rem;
+}
+textarea::placeholder{
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+textarea:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+#envia-mensagem{
+    width: 40%;
+}

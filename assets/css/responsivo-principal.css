@@ -1,0 +1,38 @@
+@media screen and (max-width: 480px){
+    /*formulário login*/
+    .form-login{width: 80%;}
+    /*todos os produtos*/
+    .info-sessao{
+        align-items: flex-start;
+        flex-direction: column;
+        width: 80%;
+    }
+    .info-sessao h1{
+        margin-bottom: 1rem;
+    }
+    .sessoes .caixa:nth-last-child(-n+2){
+        display: initial;
+    }
+    /*cadastro novo produto*/
+    .novo-produto{
+        width: 80%;
+    }
+    .novo-produto-legenda{
+        font-size: 1.4rem;
+    }
+    
+}
+@media screen and (min-width: 481px) and (max-width:940px){
+    .sessoes .caixa:nth-last-child(-n+2){
+        display: initial;
+    }
+    .caixa{
+        margin-bottom: 1rem;
+        width:23.5%;
+    }
+    /*cadastro novo produto*/
+    .novo-produto{
+        width: 90%;
+    }
+    
+}

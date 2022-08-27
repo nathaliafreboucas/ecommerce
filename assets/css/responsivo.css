@@ -1,0 +1,152 @@
+@media screen and (max-width: 480px){
+    .form-pesquisa{display: none;} 
+    .cabecalho{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-busca{
+        width: 30%;
+        justify-content: center;
+    }
+    .elementos-logo{width: 2.6rem;}
+    #elemento-logo{width: 1.8rem;}
+    .botao-login{justify-content: center;}
+    .botao-administrador{
+        justify-content: center;
+        width: 56%
+    }
+    .botao-branco{
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.8rem 2.8rem;
+    }
+    .botao-branco-administrador{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .b-busca2{
+        display: block;
+        margin-left: 1rem;
+        background-color: transparent;
+        border: transparent;
+    }
+    .b-busca2 img{height: 1.5rem;}
+    .banner{
+        padding-left: 1.5rem;
+        width: 100%;
+        height: 19rem;
+    }
+    .banner h1{
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .banner p{
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+    .banner button{
+        height: 2.9rem;
+        width: 119px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    /* parte principal*/
+    .sessao-principal{margin-top: 1.5rem;}
+    .info-sessao h1{font-size: 1.5rem;}
+    .info-sessao a{font-size: 1rem;}
+    .sessoes{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .caixa{
+        width: 48%;
+        margin-bottom: 2%;
+    }
+    .sessoes .caixa:nth-last-child(-n+2){display: none;}
+
+    /*parte principal da pagina de detalhes*/
+   
+    .detalhes-descricao{
+        flex-direction: column; 
+        padding-top: 0;
+        align-items: center;
+    }
+    .imagem-descricao{
+        width: 100%;
+        padding: 0;
+    }
+    .descricao{width: 80%;}
+    .descricao h1{font-size: 1.5rem;}
+
+    /*formulario antes do footer*/
+    .conteudo-menu-formulario{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding-bottom: 0;
+    }
+    .menu, .formulario, #envia-mensagem {margin-bottom: 1.5rem;}
+    .logo-rodape{
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .logo-menu{
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu{
+        line-height: 2rem;
+        text-align: center;
+    }
+    .formulario{width: 100%;}
+    #envia-mensagem{width: 100%;}
+}
+@media screen and (min-width: 481px) and (max-width:940px){
+    .cabecalho{
+        width: 80%;
+        align-items: center;
+    }
+    .logo-busca{ width: 50%;}
+    .elementos-logo{width: 2.6rem;}
+    #elemento-logo{width: 1.8rem;}
+    .banner{padding-left: 5%;}
+    .info-sessao h1{font-size: 1.5rem;}
+    .info-sessao a{font-size: 1rem;}
+    .info-sessao, .sessoes{width: 90%;}
+    .caixa{width: 22.5%;}
+    .sessoes .caixa:nth-last-child(-n+2){display: none;}
+
+    /*parte principal da pagina de detalhes*/
+    .descricao{
+        width: 60%;
+    }
+    .descricao h1{
+        font-size:1.5rem;
+        line-height: 1rem;
+    }
+    .imagem-descricao{
+        width: 30%;
+    }
+
+    /*formulario rodape*/
+    .conteudo-menu-formulario{
+        width: 90%;
+        height: 20rem;
+        justify-content: space-between;
+    }
+    .logo-menu{
+        width: 30%;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 3rem;
+    }
+    .logo-rodape{margin-bottom: 1rem;}
+    .formulario{
+        width: 60%;
+        height: 100%;
+    }
+    .sessao-unica{justify-content: flex-start;}
+    
+}

@@ -1,0 +1,19 @@
+.botao-branco{padding: .8rem 2rem;}
+
+.formulario-novo-produto{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.novo-produto{
+    width: 45%;
+}
+.novo-produto-legenda{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+    margin-bottom: 1.2rem;
+}
+.botoes{
+    width: 100%;
+}
