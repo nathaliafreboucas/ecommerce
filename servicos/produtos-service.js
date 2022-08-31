@@ -42,11 +42,40 @@ const adicionaProduto = (url,categoria,nome,preco,descricao) => {
     .then(resposta =>{
         return resposta.body
     })
+
 }
+// EDITAR - PUT
+const editaProduto = (id,url,categoria,nome,preco,descricao) => {
+    return fetch(`http://localhost:3000/produtos/${id}`,{
+        method: 'PUT',
+        headers:{
+            'Content-type' : 'application/json'
+        },
+        body: JSON.stringify({
+            url: url,
+            categoria: categoria,
+            nome: nome,
+            preco: preco,
+            descricao: descricao
+        })
+    })
+    .then(resposta =>{
+        return resposta.json()
+    })
+}
+//APAGAR - DELETE
+const apagaProduto = (id)=>{
+    return fetch(`http://localhost:3000/produtos/${id}`, {
+        method: 'DELETE',
+    })
+}
+
 export const produtoServices = {
     listaProdutos,
     adicionaProduto,
     pegaProduto,
-    pegaSessaoProduto
+    pegaSessaoProduto,
+    editaProduto,
+    apagaProduto
 }
 

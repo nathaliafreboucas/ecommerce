@@ -6,23 +6,8 @@
     font-weight: 400;
 }
 
-.botoes-crud{
-    background: transparent;
-    border: none;
-    width: 1.5rem;
-    align-items: center;
+.link-crud img{
+    
+    width: 1rem;
+   
 }
-
-
-.div-botoes-crud{
-    position: absolute;
-    top:0;
-    float: right;
-
-}
-
-
-
-
-
-

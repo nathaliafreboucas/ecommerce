@@ -6,12 +6,10 @@ const todosOsProdutos = (id,url,nome,preco) =>{ /*Criando template da página do
     const conteudo = `
             <div class="div-img-botoes">
                 <div class="div-img-produto">
-                    <img src="${url}" alt="">
+                    <img src="${url}" alt=""> 
                 </div>
-                <div class="div-botoes-crud">
-                    <button class="botoes-crud" data-botao-deletar><img src="./assets/imagens/imgdelete.png" alt=""></button>
-                    <button class="botoes-crud" data-botao-editar><img src="./assets/imagens/imgedit.png" alt=""></button>
-                </div>
+                <a data-botao-deletar class="link-crud"><img src="./assets/imagens/imgdelete.png" alt="" class="botao-excluir"></a>
+                <a href="./edita-produto.html?id=${id}" class="link-crud" data-botao-editar><img src="./assets/imagens/imgedit.png" alt=""></a>
             </div>
             
             <div class="info-produto">
@@ -21,6 +19,8 @@ const todosOsProdutos = (id,url,nome,preco) =>{ /*Criando template da página do
             </div>
     `
     caixa.innerHTML = conteudo;
+    caixa.dataset.id = id
+    caixa.dataset.caixa= "caixa"
     return caixa
 }
 
@@ -31,3 +31,4 @@ produtoServices.listaProdutos()
         sessaoUnica.appendChild(todosOsProdutos(elemento.id, elemento.url, elemento.nome,elemento.preco))
     })
 })
+

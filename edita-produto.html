@@ -9,12 +9,11 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style-principal.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/formulário.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/produtos.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/novo-produto.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/responsivo.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/responsivo-principal.css">
-    
     </head>
-
+    
     <title>Alura Geek</title>
     <body>
         <header>
@@ -31,8 +30,8 @@
                     </form>
                     
                 </div>
-                <div class="botao-login">
-                    <button class="b-login"> Login </button>
+                <div class="botao-login botao-administrador">
+                    <a href="./produtos.html"><button class="botao-branco botao-branco-administrador"> Menu administrador </button></a>
                 </div>
                 <div class="botao-busca">
                     <a><button class="b-busca2"><img src="./assets/imagens/lupa-preta.png" alt=""></button></a>
@@ -40,15 +39,33 @@
             </div>
         </header>
         <main>
-            <section class="sessao-principal">
-                <div class="info-sessao">
-                    <h1>Todos os produtos</h1>
-                    <a href="./novo-produto.html"><button class="botoes">Adicionar produto</button></a>
-                </div>
-                <div class="sessoes" data-todos-produtos>
-                   
-                </div>
-            </section>
+            <div class="formulario-novo-produto">
+                <form class="novo-produto" method="GET" data-form-salva-produto>
+                    <fieldset class="form-novo-produto">
+                        <legend class="novo-produto-legenda">Editar Produto</legend>
+                        <div class="input input-nome">
+                            <input name="url" type="text" id="url" data-url>
+                            <label for="url">Url da imagem</label>
+                        </div>
+                        <div class="input input-nome">
+                            <input name="categoria" type="text" id="categoria" data-categoria>
+                            <label for="categoria">Categoria</label>
+                        </div>
+                        <div class="input input-nome">
+                            <input name="produto" type="text" id="produto" data-nome>
+                            <label for="produto">Nome do produto</label>
+                        </div>
+                        <div class="input input-nome">
+                            <input name="preco" type="text" id="preco" data-preco>
+                            <label for="preco">Preço do produto</label>
+                        </div>
+                        <div class="input textarea">
+                            <textarea type="text" id="descricao" placeholder="Descrição do produto" data-descricao></textarea>
+                        </div>
+                        <button class="botoes" id="entrar" type="submit" >Salvar Alterações</button>
+                    </fieldset>
+                </form>
+            </div>
             <section class="menu-formulario">
                 <div class="conteudo-menu-formulario">
                     <div class="logo-menu">
@@ -70,7 +87,7 @@
                         <fieldset class="sessao-unica">
                             <legend class="formulario-legenda">Fale Conosco</legend>
                             <div class="input input-nome">
-                                <input name="nome" type="text" id="nome">
+                                <input name="nome" type="text" id="nome" required/>
                                 <label for="nome">Nome</label>
                             </div>
                             <div class="input textarea">
@@ -86,8 +103,6 @@
         <footer class="rodape">
             <p> &copy; Desenvolvido por Nathália Rebouças 2022</p>
         </footer>
-        <script type="module" src="./produtos-controller/produtosControllerAdmin.js"></script>
-        <script type="module" src="./produtos-controller/removeProdutos-controller.js"></script>
-
     </body>
+    <script type="module"src="./produtos-controller/editaProdutos-controller.js"></script>
 </html>
